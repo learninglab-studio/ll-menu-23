@@ -1,5 +1,5 @@
 import MicroprojectCard from "./microproject-card"
-import CodeBlock from "../utilities/code-block"
+import CodeBlock from "@/components/utilities/code-block"
 
 module.exports = function MicroprojectList(props) {
     return (

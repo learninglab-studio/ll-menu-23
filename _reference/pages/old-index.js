@@ -45,8 +45,7 @@ export async function getStaticProps() {
         shoots: allShoots,
         microprojects: allMicroprojects,
         projects: allProjects
-    })
-    
+    }) 
     return {
         props: {
             markdown: TheMarkdown,

@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import Indie from '@/components/fonts/indie'
+import SlackImage from '@/components/tests/SlackImage'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,13 +16,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main} >
+      <main className={styles.main}>
         <div className={inter.className}>
-          <Indie><h1 style={{fontWeight: "900", fontSize: "10em"}}>the menu</h1></Indie>
-          <p style={{fontWeight: "100"}}>ok. what now?</p>
-          <Indie>test</Indie>
+          <h1>the menu</h1>
+          <h2>test</h2>
+          {/* <SlackImage slackUrl="https://files.slack.com/files-pri/T0HTW3H0V-F04PR57H5PA/img_1587.jpg?pub_secret=18fddf4f4c" /> */}
+          <p>image there or no?</p>
         </div>
-        
       </main>
     </>
   )

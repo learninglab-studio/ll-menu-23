@@ -1,5 +1,5 @@
 import styles from "./action-card.module.css"
-import Stringify from "../utilities/stringify"
+import Stringify from "@/components/utilities/stringify"
 
 export default function ActionCard({name, notes, assignedTo, temporalStatus}) {
     return (

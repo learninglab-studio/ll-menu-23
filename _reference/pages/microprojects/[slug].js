@@ -1,5 +1,5 @@
 import Layout from '../../components/layout/layout';
-import { getAllMicroprojects, getOneMicroprojectBySlug } from '../../utils/menu-microproject-utils'
+import { getAllMicroprojects, getOneMicroprojectBySlug } from '../../../src/lib/menu-logic/menu-microproject-utils'
 import Stringify from '../../components/utilities/stringify'
 import llog from '../../utils/ll-loggers'
 import ActionCard from '../../components/airtable-records/action-card';
@@ -16,7 +16,6 @@ const getAllMicroprojectPaths = async function() {
       {
         params: {
           slug: e.fields.Slug,
-          // airtableId: e.id
         }
       }
     )
