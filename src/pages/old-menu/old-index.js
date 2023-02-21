@@ -1,6 +1,6 @@
 import BigCopyButton from "@/components/buttons/big-copy-button";
 import styles from '@/styles/OldHome.module.css'
-import { getActions, getEvents, getProjects, getMicroprojects, getShoots } from '../utils/get-weekly-data';
+import { getActions, getEvents, getProjects, getMicroprojects, getShoots } from '@/lib/utils/get-weekly-data';
 import Stringify from '../components/utilities/stringify';
 import Spacer from '../components/utilities/spacer';
 import generateWeeklyMarkdown from '../utils/generate-weekly-markdown'
