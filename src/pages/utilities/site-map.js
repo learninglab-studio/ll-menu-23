@@ -1,6 +1,6 @@
 import fs from "fs"
 import path from "path"
-import Stringify from "@/components/utilities/Stringify"
+import Stringify from "@/components/utilities/stringify"
 import Link from "next/link"
 
 export default function SiteMap (props) {

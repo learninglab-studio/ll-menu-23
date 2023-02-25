@@ -1,5 +1,5 @@
 import ActionCard from "./action-card"
-import Stringify from "@/components/utilities/Stringify"
+import Stringify from "@/components/utilities/stringify"
 
 module.exports = function ActionList(props) {
     return (
