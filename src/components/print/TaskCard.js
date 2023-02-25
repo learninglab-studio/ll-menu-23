@@ -1,4 +1,4 @@
-import styles from './task-card.module.css'
+import styles from './TaskCard.module.css'
 
 const TaskCard = (props) => {
     return (
