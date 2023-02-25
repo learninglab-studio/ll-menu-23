@@ -8,7 +8,7 @@ export default function Spacer(props) {
                 <div style={{width: `${props.width}px`}}></div>
             )
     } else {
-        return <div></div>
+        return (<div></div>)
     }
     
 }
