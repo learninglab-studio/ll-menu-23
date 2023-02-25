@@ -6,7 +6,7 @@ import styles from '@/styles/Home.module.css'
 import LLDate from '@/components/info/LLDate'
 import Heavy from '@/components/fonts/Heavy'
 import { CodeBlock } from '@/components/utilities'
-import Spacer from '@/components/utilities/Spacer'
+import Gap from '@/components/utilities/Gap'
 
 const inter = Inter({ subsets: ['latin'], weights: ["200", "900"] })
 
