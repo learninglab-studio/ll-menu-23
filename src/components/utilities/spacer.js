@@ -1,4 +1,4 @@
-export default function Spacer(props) {
+const Spacer = (props) => {
     if (props.height) {
         return (
                 <div style={{height: `${props.height}px`}}></div>
@@ -8,7 +8,8 @@ export default function Spacer(props) {
                 <div style={{width: `${props.width}px`}}></div>
             )
     } else {
-        return (<div></div>)
+        return (<div style={{height: `1px`}}></div>)
     }
-    
 }
+
+export default Spacer;
