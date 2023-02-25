@@ -1,6 +1,6 @@
 import fs from "fs"
 import path from "path"
-import BStringify from "@/components/utilities/BStringify"
+import { Stringify } from "@/components/utilities"
 import Link from "next/link"
 
 export default function SiteMap (props) {
