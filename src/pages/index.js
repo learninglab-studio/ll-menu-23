@@ -29,7 +29,7 @@ export default function Home() {
       <div className={inter.className}>
         <div style={{fontWeight: "200", width: "80%", margin:"auto"}}>
           <h2>links</h2>
-          <Spacer />
+          <Gap height="100" />
           <CodeBlock>test test</CodeBlock>
           <ul>
             <li><Link href="/old-menu/main">old menu main</Link></li>
