@@ -1,4 +1,4 @@
-import styles from './big-copy-button.module.css'
+import styles from './BigCopyButton.module.css'
 import CopyToClipboard from 'react-copy-to-clipboard'
 
 export default function BigCopyButton({text}){

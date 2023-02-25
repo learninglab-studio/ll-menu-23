@@ -1,6 +1,6 @@
 import fs from "fs"
 import path from "path"
-import Stringify from "../../components/utilities/Stringify"
+import Stringify from "@/components/utilities/Stringify"
 import Link from "next/link"
 
 export default function SiteMap (props) {
@@ -29,7 +29,7 @@ export async function getStaticProps(context) {
         if (fs.statSync(dirPath + "/" + file).isDirectory()) {
           arrayOfFiles = getAllFiles(dirPath + "/" + file, arrayOfFiles)
         } else {
-          if (!file.includes("_app.js") && !file.includes(".DS_") && !file.includes("]") && !file.includes("index.js")) {
+          if (!file.includes("_app.js") && !file.includes(".DS_") && !file.includes("]") && !file.includes("index.js")  && !file.includes("_document.js")) {
             arrayOfFiles.push({
               file: `${dirPath}/${file}`,
               slug: (`${dirPath}/${file}`.split('pages')[1]).replace(/\.[^/.]+$/, "")
@@ -39,10 +39,10 @@ export async function getStaticProps(context) {
       })
       return arrayOfFiles
     }
-    let allTheFiles = await getAllFiles(`pages`)
+    let allTheFiles = await getAllFiles(`src/pages`)
     let paths = allTheFiles.map(e => {
-      if (e.slug !== ("DS_Store" | "_app.js")) {
-        
+      if (e.slug !== ("DS_Store" | "_app.js" | "_document")) {
+        return e
       } else {
         
       }

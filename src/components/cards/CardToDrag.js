@@ -1,4 +1,4 @@
-import styles from './card-to-drag.module.css'
+import styles from './CardToDrag.module.css'
 import Draggable from 'react-draggable'
 
 export default function CardToDrag(props){

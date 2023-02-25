@@ -1,4 +1,4 @@
-import styles from './card-with-texture.module.css'
+import styles from './CardWithTexture.module.css'
 
 export default function CardWithTexture(props){
     return(
