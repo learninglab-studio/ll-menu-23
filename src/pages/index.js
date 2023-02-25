@@ -1,10 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
-import SlackImage from '@/components/tests/SlackImage'
+import LLDate from '@/components/info/LLDate'
+import Heavy from '@/components/fonts/Heavy'
+import { CodeBlock, Spacer } from '@/components/utilities'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'], weights: ["200", "900"] })
 
 export default function Home() {
   return (
@@ -17,12 +20,24 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={inter.className}>
-          <h1>the menu</h1>
-          <h2>test</h2>
-          {/* <SlackImage slackUrl="https://files.slack.com/files-pri/T0HTW3H0V-F04PR57H5PA/img_1587.jpg?pub_secret=18fddf4f4c" /> */}
-          <p>image there or no?</p>
+          <Heavy>the menu</Heavy>
+          <LLDate />
         </div>
+
       </main>
+      <div className={inter.className}>
+        <div style={{fontWeight: "200", width: "80%", margin:"auto"}}>
+          <h2>links</h2>
+          <Spacer />
+          <CodeBlock>test test</CodeBlock>
+          <ul>
+            <li><Link href="/old-menu/main">old menu main</Link></li>
+            <li><Link href="/old-menu/main">old menu main</Link></li>
+            <li><Link href="/old-menu/main">old menu main</Link></li>
+            <li><Link href="/old-menu/main">old menu main</Link></li>
+          </ul>
+        </div>
+      </div>
     </>
   )
 }

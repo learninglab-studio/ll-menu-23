@@ -21,3 +21,11 @@ button {
   font-family : inherit;
   font-size: inherit;
 }
+
+body {
+  background: radial-gradient(circle at center, #e6e7e8, #a5a5a5);
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
