@@ -7,6 +7,7 @@ import LLDate from '@/components/info/LLDate'
 import Heavy from '@/components/fonts/Heavy'
 import { CodeBlock } from '@/components/utilities'
 import Gap from '@/components/utilities/Gap'
+import Draggable from 'react-draggable'
 
 const inter = Inter({ subsets: ['latin'], weights: ["200", "900"] })
 
@@ -22,9 +23,11 @@ export default function Home() {
       <main className={styles.main}>
         <div className={inter.className}>
           <Heavy>the menu</Heavy>
+          <Draggable>
+            <div>mask</div>
+          </Draggable>
           <LLDate />
         </div>
-
       </main>
       <div className={inter.className}>
         <div style={{fontWeight: "200", width: "80%", margin:"auto"}}>
