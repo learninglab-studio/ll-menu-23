@@ -1,7 +1,6 @@
 import airtable from 'airtable';
 import Link from 'next/link';
 import { Stringify, Gap } from '@/components/utilities';
-import { ST } from 'next/dist/shared/lib/utils';
 
 const TaskCard = ({data}) => {
   return (
